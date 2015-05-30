@@ -1,0 +1,35 @@
+// Description.ext
+// https://community.bistudio.com/wiki/Description.ext
+// by SavageCDN
+// ====================================================================================
+// ====================================================================================
+// Mission header
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 2;
+};
+
+// ====================================================================================
+// Loading screen, etc	https://community.bistudio.com/wiki/Loading_Screens
+
+author = "SavageCDN";									// mission author
+
+// ====================================================================================
+// Respawn and config		https://community.bistudio.com/wiki/Arma_3_Respawn
+
+respawn = 3;											// BASE
+respawnTemplates[] = {"MenuInventory"};					// templates from CfgRespawnTemplates
+
+// ====================================================================================
+// Respawn Inventory
+
+class CfgRespawnInventory
+{
+	#include "rsc\sav_loadout_AAF.hpp"
+};
+
+// ====================================================================================
+// ====================================================================================
